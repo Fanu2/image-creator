@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Beautiful Image Creator</h1>
+        <div class="options">
+            <label for="bgSelect">Choose Background:</label>
+            <select id="bgSelect">
+                <option value="bg1.jpg">Background 1</option>
+                <option value="bg2.jpg">Background 2</option>
+                <option value="bg3.jpg">Background 3</option>
+            </select>
+
+            <label for="textInput">Enter Text:</label>
+            <input type="text" id="textInput" placeholder="Type your text here">
+
+            <label for="fontSelect">Choose Font:</label>
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Verdana">Verdana</option>
+            </select>
+
+            <label for="colorSelect">Choose Text Color:</label>
+            <input type="color" id="colorSelect" value="#ffffff">
+
+            <button id="generateBtn">Create Image</button>
+            <button id="saveBtn" class="hidden">Save Image</button>
+        </div>
+
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div id="status" class="status hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
